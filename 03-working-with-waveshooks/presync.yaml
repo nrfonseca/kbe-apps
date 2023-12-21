@@ -11,7 +11,7 @@ metadata:
 spec:
   containers:
   - name: myapp-container
-    image: registry.access.redhat.com/ubi8/ubii
-    command: ['bash', '-c', 'sleep 3 ; echo Presync']
+    image: registry.access.redhat.com/ubi8/ubi
+    command: ['bash', '-c', 'sleep 3 ; exit 1']
     imagePullPolicy: Always
   restartPolicy: "Never"
