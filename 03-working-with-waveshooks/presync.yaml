@@ -12,6 +12,6 @@ spec:
   containers:
   - name: myapp-container
     image: registry.access.redhat.com/ubi8/ubi
-    command: ['bash', '-c', 'sleep 3 ; exit 1']
+    command: ['bash', '-c', 'sleep 3 ; exit 0']
     imagePullPolicy: Always
   restartPolicy: "Never"
