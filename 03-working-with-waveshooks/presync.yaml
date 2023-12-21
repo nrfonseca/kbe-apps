@@ -4,7 +4,7 @@ metadata:
   name: presync-pod
   namespace: synctest
   annotations:
-    argocd.argoproj.io/sync-wave: "0"
+    argocd.argoproj.io/sync-wave: "1"
     argocd.argoproj.io/hook: PreSync
   labels:
     app.kubernetes.io/name: presync-pod
