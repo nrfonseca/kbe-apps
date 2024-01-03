@@ -21,7 +21,7 @@ spec:
       initContainers:
       - name: init-bgd
         image: quay.io/redhatworkshops/bgd
-        command: ['bash', '-c', 'sleep 3 ; exit 0']
+        command: ['bash', '-c', 'sleep 3 ; exit 1']
         imagePullPolicy: Always
       containers:
       - image: quay.io/redhatworkshops/bgd
